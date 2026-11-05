@@ -1,0 +1,24 @@
+public void div(View view) {
+    float a1 = Float.parseFloat(e1.getText().toString());
+    float a2 = Float.parseFloat(e2.getText().toString());
+    if (a2 == 0) {
+        tv1.setText("Cannot divide by zero");
+        return;
+    }
+    tv1.setText("" + (a1 / a2));
+}
+
+private boolean validInput() {
+    if (e1.getText().toString().isEmpty() || e2.getText().toString().isEmpty()) {
+        tv1.setText("Enter both numbers");
+        return false;
+    }
+    return true;
+}
+
+public void add(View view) {
+    if (!validInput()) return;
+    int a1 = Integer.parseInt(e1.getText().toString());
+    int a2 = Integer.parseInt(e2.getText().toString());
+    tv1.setText("" + (a1 + a2));
+}
