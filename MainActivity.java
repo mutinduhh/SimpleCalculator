@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
             e1=findViewById(R.id.editText1);
             e2=findViewById(R.id.editText2);
             tv1=findViewById(R.id.textView1);
-        });
     }
     public void add(View view)
     {
